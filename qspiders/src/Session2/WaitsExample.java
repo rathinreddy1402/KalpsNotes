@@ -16,7 +16,7 @@ public class WaitsExample {
 	public static void main(String[] args) {
 		
 		String key="webdriver.chrome.driver";
-		String value="C:\\Users\\Shobha\\Downloads\\chromedriver_win32\\chromedriver.exe";
+		String value="C:\\Users\\Shobha\\Downloads\\chromedriver_win32 (7)\\chromedriver.exe";
 		System.setProperty(key, value);
 		WebDriver driver=new ChromeDriver();
 		
@@ -28,7 +28,7 @@ public class WaitsExample {
 	
 	//explicitly wait
 	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(20));
-	 wait.until(ExpectedConditions.titleContains("View Time-Track"));
+	 wait.until(ExpectedConditions.titleContains("Enter Time-Track"));
 	 
 	 
 	 

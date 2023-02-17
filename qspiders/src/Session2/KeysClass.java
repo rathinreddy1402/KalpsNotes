@@ -1,5 +1,7 @@
 package Session2;
 
+import java.awt.RenderingHints.Key;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -10,7 +12,7 @@ public class KeysClass {
 
 	public static void main(String[] args) throws Throwable {
 		String key="webdriver.chrome.driver";
-		String value="C:\\Users\\Shobha\\Downloads\\chromedriver_win32\\chromedriver.exe";
+		String value="C:\\\\Users\\\\Shobha\\\\Downloads\\\\chromedriver_win32 (7)\\\\chromedriver.exe";
 		System.setProperty(key, value);
 		WebDriver driver=new ChromeDriver();
 	driver.get("https://demo.actitime.com/login.do");
@@ -22,6 +24,7 @@ public class KeysClass {
 //password.sendKeys(Keys.ENTER);
 
 //case2
+//driver.findElement(By.id("username")).sendKeys("admin",Keys.TAB,"manager",Keys.ENTER);
 driver.findElement(By.id("username")).sendKeys("admin",Keys.TAB,"manager",Keys.ENTER);
 	}
 

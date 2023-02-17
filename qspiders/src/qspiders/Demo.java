@@ -21,9 +21,9 @@ public class Demo {
 		 
 		// Thread.sleep(2000);
 		 text.submit();
-      //  driver.findElement(By.className("initial")).click();
-//        Thread.sleep(3000);
-//        driver.findElement(By.linkText("View Time-Track")).click();
+       driver.findElement(By.className("initial")).click();
+       Thread.sleep(3000);
+        driver.findElement(By.linkText("View Time-Track")).click();
 		//driver.findElement(By.xpath("//a[text()='View Time-Track']")).click();
 		
 //        driver.findElement(By.partialLinkText("Lock")).click();
